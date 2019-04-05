@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Order_My_table</string>
+    <string name="open">>Order_My_table</string>
+    <string name="close">>Order_My_table</string>
+    <integer-array name="img_id_arr">
+        <item>@drawable/ht</item>
+        <item>@drawable/ht1</item>
+        <item>@drawable/ht2</item>
+        <item>@drawable/ht3</item>
+        <item>@drawable/ht4</item>
+    </integer-array>
+    <string name="phone_number">Phone Number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_sign_in">Verify and Sign In</string>
+    <string name="sign_out">sign out</string>
+</resources>

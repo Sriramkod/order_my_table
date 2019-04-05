@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "466808530118",
+    "firebase_url": "https://ordermytable-3da1f.firebaseio.com",
+    "project_id": "ordermytable-3da1f",
+    "storage_bucket": "ordermytable-3da1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466808530118:android:b62162fa138343bb",
+        "android_client_info": {
+          "package_name": "com.example.ksriram.food_in_hands"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466808530118-u7rk9gqv0a3intku3goqj69872hfjmt0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzp9p7IkpgQOMI8rRF-af7aemBw3v_oqY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
