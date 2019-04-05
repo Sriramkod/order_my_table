@@ -12,10 +12,12 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ProgressBar;
 
 public class details extends AppCompatActivity {
-    private WebView myWebView;
-    private ProgressDialog progressDialog;
+
+    private WebView webView;
+    ProgressBar progressBar;
     Button button2;
     Intent intent1;
     @Override
@@ -23,11 +25,27 @@ public class details extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        myWebView = (WebView)findViewById(R.id.webView);
-        WebSettings webSettings = myWebView.getSettings();
+        webView = (WebView)findViewById(R.id.webView);
+        progressBar =(ProgressBar)findViewById(R.id.progressBar);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("https://learnfriendly.000webhostapp.com/dashb.html");
+        WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://learnfriendly.000webhostapp.com/dashb.html");
-        myWebView.setWebViewClient(new WebViewClient());
+        webView.setWebViewClient(new WebViewClient(){
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                progressBar.setVisibility(View.VISIBLE);
+               // setTitle("Please Wait...");
+                super.onPageStarted(view, url, favicon);
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                progressBar.setVisibility(View.GONE);
+                //setTitle(view.getTitle());
+                super.onPageFinished(view, url);
+            }
+        });
         Button btnReturn1 = (Button) findViewById(R.id.back);
         btnReturn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -37,43 +55,6 @@ public class details extends AppCompatActivity {
                 finish();
             }
         });
-
-    }
-    public class myWebClient extends WebViewClient
-    {
-
-        @Override
-        public void onPageStarted(WebView view, String url, Bitmap favicon) {
-            // TODO Auto-generated method stub
-            super.onPageStarted(view, url, favicon);
-        }
-
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            // TODO Auto-generated method stub
-            //progressBar.setVisibility(View.VISIBLE);
-            progressDialog = ProgressDialog.show(details.this, "Loading","Wait....", true);
-            view.loadUrl(url);
-            return true;
-
-        }
-
-        @Override
-        public void onPageFinished(WebView view, String url) {
-            // TODO Auto-generated method stub
-            super.onPageFinished(view, url);
-            progressDialog.dismiss();
-            //progressBar.setVisibility(View.GONE);
-        }
-    }
-
-    @Override
-    public void onBackPressed() {
-        if(myWebView.canGoBack()) {
-            myWebView.goBack();
-        } else {
-            super.onBackPressed();
-        }
     }
 
 
