@@ -106,7 +106,10 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 if(id==R.id.mycart){
-                    Toast.makeText(MainActivity.this,"This is Settings",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"About us and the application",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, about.class);
+
+                    startActivity(intent);
 
                 }
                 dl.closeDrawer(GravityCompat.START);
