@@ -15,8 +15,12 @@
       },
       "oauth_client": [
         {
-          "client_id": "466808530118-u7rk9gqv0a3intku3goqj69872hfjmt0.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "466808530118-p74fovseue473fu5ao3c7hhv0ndl1vu4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ksriram.food_in_hands",
+            "certificate_hash": "9828c6a1bff17e14f68f569b6e18bbe88710bd5e"
+          }
         }
       ],
       "api_key": [
@@ -25,15 +29,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466808530118-u7rk9gqv0a3intku3goqj69872hfjmt0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

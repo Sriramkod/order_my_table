@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food">
+
+    <ImageView
+        android:id="@+id/india"
+        android:layout_width="339dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-183dp"
+        android:src="@drawable/indian2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="     Indian"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="181dp"
+        android:text="     Chinese"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/chinese"
+        android:layout_width="356dp"
+        android:layout_height="152dp"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/indian3" />
+
+    <ImageView
+        android:id="@+id/french"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/indian5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:text="     French   "
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>

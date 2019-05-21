@@ -15,23 +15,25 @@ public class finalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final);
         ImageView image = (ImageView) findViewById(R.id.imageView);
-        TextView  textView= (TextView)findViewById(R.id.textView1);
-        TextView  textView1= (TextView)findViewById(R.id.textView2);
+        final TextView  textView= (TextView)findViewById(R.id.textView1);
+        final TextView  textView1= (TextView)findViewById(R.id.textView2);
         Bundle extras = getIntent().getExtras();
         int imageRes = extras.getInt("IMAGE_RES");
         textView.setText(getIntent().getStringExtra("Image_name"));
         textView1.setText(getIntent().getStringExtra("Image_des"));
         image.setImageResource(imageRes);
         Button startButton = (Button)findViewById(R.id.button1);
+
         startButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
 
             public void onClick(View v) {
 
-
+                String imagename= textView.getText().toString();
                 Intent intent = new Intent(finalActivity.this, Nav.class);
 
+                intent.putExtra("imagename",imagename);
                 startActivity(intent);
 
             }

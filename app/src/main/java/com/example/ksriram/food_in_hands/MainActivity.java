@@ -94,13 +94,14 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
             if(id==R.id.settings){
+
                 Toast.makeText(MainActivity.this,"This is Settings",Toast.LENGTH_SHORT).show();
                 dl.closeDrawer(GravityCompat.START);
             }
                 if (id == R.id.account) {
 
                     Toast.makeText(MainActivity.this, "This is mesg", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, Nav.class);
+                    Intent intent = new Intent(MainActivity.this, display.class);
 
                     startActivity(intent);
 

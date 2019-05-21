@@ -14,4 +14,12 @@
     <string name="enter_otp">Enter OTP</string>
     <string name="verify_sign_in">Verify and Sign In</string>
     <string name="sign_out">sign out</string>
+    <string-array name="numbers">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item> greater than five</item>
+    </string-array>
 </resources>

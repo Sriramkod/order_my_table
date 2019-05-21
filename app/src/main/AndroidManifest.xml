@@ -25,7 +25,11 @@
         <activity android:name=".finalActivity" />
         <activity android:name=".details" />
         <activity android:name=".SignedIn" />
-        <activity android:name=".about"></activity>
+        <activity android:name=".about" />
+        <activity android:name=".order" />
+        <activity android:name=".order1" />
+        <activity android:name=".display" />
+        <activity android:name=".food"></activity>
     </application>
 
 </manifest>

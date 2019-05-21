@@ -13,5 +13,4 @@ android:title="Settings"/>
 <item android:id="@+id/mycart"
 android:icon="@drawable/ic_message"
 android:title="About"/>
-
 </menu>
