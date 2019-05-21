@@ -16,7 +16,7 @@ order=(Button)findViewById(R.id.order);
 order.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-      Intent intent = new Intent(about.this, gridactivity.class);
+      Intent intent = new Intent(about.this, order.class);
         startActivity(intent);
     }
 });
